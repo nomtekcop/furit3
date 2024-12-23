@@ -73,30 +73,30 @@
             }
         }
         .left-image, .right-image {
-            position: fixed;
-            top: 0;
-            width: 15%; /* 이미지 폭 */
-            height: 100%; /* 화면 높이에 맞춤 */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
+        position: fixed;
+        top: 10%; /* 위에서 여유 공간 */
+        width: 12%; /* 이미지 폭 */
+        height: 80%; /* 이미지 높이 */
+        background-size: contain; /* 비율 유지하며 꽉 차지 않음 */
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
-        .left-image {
-            left: 0;
-            background-image: url('./images/left.jpg'); /* 왼쪽 이미지 */
-        }
+    .left-image {
+        left: 2%; /* 화면 왼쪽에서 약간 안쪽으로 */
+        background-image: url('./images/left.jpg'); /* 왼쪽 이미지 */
+    }
 
-        .right-image {
-            right: 0;
-            background-image: url('./images/right.jpg'); /* 오른쪽 이미지 */
-        }
+    .right-image {
+        right: 2%; /* 화면 오른쪽에서 약간 안쪽으로 */
+        background-image: url('./images/right.jpg'); /* 오른쪽 이미지 */
+    }
 
-        /* 메인 콘텐츠가 이미지 위에 적절히 위치하도록 마진 조정 */
-        .container {
-            margin-left: 20%; /* 이미지 너비만큼 마진 */
-            margin-right: 20%; /* 이미지 너비만큼 마진 */
-        }
+    /* 메인 콘텐츠 조정 */
+    .container {
+        margin-left: 15%; /* 이미지와 겹치지 않도록 왼쪽 여유 */
+        margin-right: 15%; /* 이미지와 겹치지 않도록 오른쪽 여유 */
+    }
 
 
 
